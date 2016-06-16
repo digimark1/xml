@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mercurygate specversion="3.12">
+<header><senderid></senderid>
+<receiverid></receiverid>
+<doctypeid>MasterBillOfLading</doctypeid>
+<doccount>1</doccount>
+<date type="generation">06/13/2016 11:17</date>
+<extractrequest><date>06/13/2016 11:17</date>
+<reason>Remote Extract</reason>
+<user userid="ProtoWSID" firstname="Web Service ID" lastname="Do Not Delete"><contactmethods><contactmethod sequencenum="1" type="Phone"></contactmethod>
+<contactmethod sequencenum="2" type="Email"></contactmethod>
+<contactmethod sequencenum="3" type="SMSEmail"></contactmethod>
+<contactmethod sequencenum="4" type="Fax"></contactmethod>
+</contactmethods>
+</user>
+</extractrequest>
+</header>
+<masterbilloflading internalid="27452903413" type="Regular"><package type=" " internalid="27452903382"><dimensions><dimension type="" dim="Width" uom=" ">0.0</dimension>
+<dimension type="" dim="Length" uom=" ">0.0</dimension>
+<dimension type="" dim="Height" uom=" ">0.0</dimension>
+</dimensions>
+<weights><weight type="actual" uom="lb">31.0</weight>
+<weight type="planned" uom="lb">31.0</weight>
+<weight type="ordered" uom="lb">31.0</weight>
+<weight type="delivered" uom="lb">31.0</weight>
+</weights>
+<itemgroups><itemgroup internalid="27452903382" isshipunit="false" ishandlingunit="true" sequence=""><description>Adhesives, class 3, UN1133, PG III - containing _1_ ctns</description>
+<containmentid>0</containmentid>
+<weights><weight type="actual" uom="lb">31.0</weight>
+<weight type="planned" uom="lb">31.0</weight>
+<weight type="ordered" uom="lb">31.0</weight>
+<weight type="delivered" uom="lb">31.0</weight>
+</weights>
+<quantities><quantity type="actual" uom="PLT">0.0</quantity>
+<quantity type="planned" uom="PLT">0.0</quantity>
+<quantity type="ordered" uom="PLT">0.0</quantity>
+<quantity type="delivered" uom="">0.0</quantity>
+</quantities>
+<dimensions><dimension type="actual" dim="Width" uom="ft">0.0</dimension>
+<dimension type="actual" dim="Length" uom="ft">50</dimension>
+<dimension type="actual" dim="Height" uom="ft">100</dimension>
+<dimension type="planned" dim="Width" uom="ft">200</dimension>
+<dimension type="planned" dim="Length" uom="ft">100</dimension>
+<dimension type="planned" dim="Height" uom="ft">150</dimension>
+</dimensions>
+<freightclass type="delivered">0.0</freightclass>
+<stackability>0</stackability>
+<trackingnumber></trackingnumber>
+<deliverystatus></deliverystatus>
+<referencenumbers></referencenumbers>
+<lineitem linenumber="-1"><weights><weight type="ordered" uom="lb">31.0</weight>
+</weights>
+<quantities><quantity type="ordered" uom="PLT">0.0</quantity>
+</quantities>
+<itemid>4620-5</itemid>
+<description>Adhesives, class 3, UN1133, PG III - containing _1_ ctns</description>
+<freightclass>85.0</freightclass>
+<commodity>None</commodity>
+<nmfccode>4620-5</nmfccode>
+<stcccode></stcccode>
+<customerpartnum></customerpartnum>
+<manufacturerpartnum></manufacturerpartnum>
+<distributorpartnum></distributorpartnum>
+<cube></cube>
+<temperaturerange></temperaturerange>
+<hazardousmaterial>true</hazardousmaterial>
+<hazmatdetail><propershippingname></propershippingname>
+<hazmatid></hazmatid>
+<packagegroup></packagegroup>
+<hazmatclass></hazmatclass>
+<contactname>Chemtrec</contactname>
+<contactphone>800-424-9300</contactphone>
+<hazmatplacards>false</hazmatplacards>
+<hazmatplacardsdetails></hazmatplacardsdetails>
+<hazmatemsnumber></hazmatemsnumber>
+<hazmatflashpointtemp></hazmatflashpointtemp>
+<comments></comments>
+</hazmatdetail>
+<dimensions><dimension type="ordered" dim="Width" uom="ft">0.0</dimension>
+<dimension type="ordered" dim="Length" uom="ft">0.0</dimension>
+<dimension type="ordered" dim="Height" uom="ft">0.0</dimension>
+</dimensions>
+<harmonizedtariffcode></harmonizedtariffcode>
+<portoflading></portoflading>
+<countryoforigin></countryoforigin>
+<countryofmanufacture></countryofmanufacture>
+<customsvalue></customsvalue>
+<customsvaluecurrency></customsvaluecurrency>
+<insuredvalue></insuredvalue>
+<insuredvaluecurrency></insuredvaluecurrency>
+<aesexportcode></aesexportcode>
+<schedulebnumber></schedulebnumber>
+<domestic>D</domestic>
+<eccn></eccn>
+<originationcountry></originationcountry>
+<manufacturingcountry></manufacturingcountry>
+<licensenumber></licensenumber>
+<licensetype></licensetype>
+<referencenumbers></referencenumbers>
+</lineitem>
+</itemgroup>
+<referencenumbers><referencenumber type="BOL" isprimary="true">1013773</referencenumber>
+<referencenumber type="Invoice Dist Method" isprimary="false">MAIL BOL-N POD-N SPEC-N</referencenumber>
+<referencenumber type="PO Number" isprimary="false">385244981</referencenumber>
+<referencenumber type="Piece Count" isprimary="false">183 CARTONS</referencenumber>
+<referencenumber type="SCAC" isprimary="false">SAIA</referencenumber>
+<referencenumber type="Tracking Dispatcher" isprimary="false">Leo Suarez (954)-635-4520</referencenumber>
+<referencenumber type="PRO" isprimary="false">806560790</referencenumber>
+<referencenumber type="PRO" isprimary="false">00806560790</referencenumber>
+<referencenumber type="CTS Invoice Number" isprimary="false">6082283</referencenumber>
+<referencenumber type="Extracted Date" isprimary="false">02/26/2016</referencenumber>
+<referencenumber type="Extract to LVP" isprimary="false">true</referencenumber>
+<referencenumber type="Customer Acct Number" isprimary="false">4859-0000</referencenumber>
+</referencenumbers>
+</itemgroups>
+</package>
+</masterbilloflading>
+</mercurygate>
