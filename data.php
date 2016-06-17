@@ -9,35 +9,35 @@ header('Access-Control-Allow-Origin: *');
 $database = '<?xml version="1.0" encoding="UTF-8"?>
 <courier_menu>
 	<ups>
-		<name>Belgian Waffles</name>
-		<price>$5.95</price>
-		<description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
-		<calories>650</calories>
+		<name>UPS Shipping Freight</name>
+		<address>3264 Lynn Ogden Lane</address>
+		<city>Houston, TX</city>
+		<phone>409-932-8538</phone>
 	</ups>
 	<dhl>
-		<name>Strawberry Belgian Waffles</name>
-		<price>$7.95</price>
-		<description>Light Belgian waffles covered with strawberries and whipped cream</description>
-		<calories>900</calories>
+		<name>DHL Global</name>
+		<address>440 Edwards Street</address>
+		<city>Greenville, NC</city>
+		<phone>252-643-8551</phone>
 	</dhl>
 	<tnt>
-		<name>Berry-Berry Belgian Waffles</name>
-		<price>$8.95</price>
-		<description>Light Belgian waffles covered with an assortment of fresh berries and whipped cream</description>
-		<calories>900</calories>
+		<name>TNT Express Shipping</name>
+		<address>483 Illinois Avenue</address>
+		<city>Sandy, OR</city>
+		<phone>503-668-3265</phone>
 	</tnt>
 	<fedex>
-		<name>French Toast</name>
-		<price>$4.50</price>
-		<description>Thick slices made from our homemade sourdough bread</description>
-		<calories>600</calories>
+		<name>FedEx tracking</name>
+		<address>256 Rardin Drive</address>
+		<city>Burlingame, CA</city>
+		<phone>650-696-4930</phone>
 	</fedex>
-	<dealtime>
-		<name>Homestyle Breakfast</name>
-		<price>$6.95</price>
-		<description>Two eggs, bacon or sausage, toast, and our ever-popular hash browns</description>
-		<calories>950</calories>
-	</dealtime>
+	<usps>
+		<name>US Postal Services</name>
+		<address>957 Medical Center Drive</address>
+		<city>Tampa, FL</city>
+		<phone>941-374-3068</phone>
+	</usps>
 </courier_menu>';
 
 if ($userid == 'leanstaffing' && $password == md5('lean2016')){
@@ -49,51 +49,51 @@ if ($userid == 'leanstaffing' && $password == md5('lean2016')){
 					  	case 'ups':
 					  		$result = '<courier_menu>
 					  				<ups>
-										<name>UPS Belgian Waffles</name>
-										<price>$5.95</price>
-										<description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
-										<calories>650</calories>
+										<name>UPS Shipping Freight</name>
+										<address>3264 Lynn Ogden Lane</address>
+										<city>Houston, TX</city>
+										<phone>409-932-8538</phone>
 									</ups>	
 					  		</courier_menu>';
 					  		break;
 					  	case 'dhl':
 					  		$result = '<courier_menu>
 									  	<dhl>
-											<name>DHL Strawberry Belgian Waffles</name>
-											<price>$7.95</price>
-											<description>Light Belgian waffles covered with strawberries and whipped cream</description>
-											<calories>900</calories>
+											<name>DHL Global</name>
+											<address>440 Edwards Street</address>
+											<city>Greenville, NC</city>
+											<phone>252-643-8551</phone>
 										</dhl>
 					  		</courier_menu>';
 					  		break;
 					  	case 'tnt':
 					  	$result = '<courier_menu>
-					  		  	<tnt>
-									<name>TNT Berry-Berry Belgian Waffles</name>
-									<price>$8.95</price>
-									<description>Light Belgian waffles covered with an assortment of fresh berries and whipped cream</description>
-									<calories>900</calories>
-								</tnt>
+											<tnt>
+												<name>TNT Express Shipping</name>
+												<address>483 Illinois Avenue</address>
+												<city>Sandy, OR</city>
+												<phone>503-668-3265</phone>
+											</tnt>
 							</courier_menu>';
 					  		break;
 					     case 'fedex':
 					  		$result = '<courier_menu>
-					  		  	<fedex>
-										<name>FEDEX French Toast</name>
-										<price>$4.50</price>
-										<description>Thick slices made from our homemade sourdough bread</description>
-										<calories>600</calories>
-									</fedex>
+											<fedex>
+												<name>FedEx tracking</name>
+												<address>256 Rardin Drive</address>
+												<city>Burlingame, CA</city>
+												<phone>650-696-4930</phone>
+											</fedex>
 							</courier_menu>';
 					  		break;
 					  	case 'dealtime':
 					  		 $result = '<courier_menu>
-					  		  				<dealtime>
-												<name>DEALTIME Homestyle Breakfast</name>
-												<price>$6.95</price>
-												<description>Two eggs, bacon or sausage, toast, and our ever-popular hash browns</description>
-												<calories>950</calories>
-											</dealtime>
+											<usps>
+												<name>US Postal Services</name>
+												<address>957 Medical Center Drive</address>
+												<city>Tampa, FL</city>
+												<phone>941-374-3068</phone>
+											</usps>
 								</courier_menu>';
 					  		break;
 					  	case 'all':
