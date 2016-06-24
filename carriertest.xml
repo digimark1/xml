@@ -1,0 +1,221 @@
+<!-- The characters within this tag syntax are comments and will not be read by the loader.-->
+<!-- All tag are required unless specified otherwise.If a tag is not required, its contents may be blank.-->
+<!-- XML documents require a root element, in this case 'MercuryGate'. -->
+<MercuryGate>
+	<!-- The Header section (i.e. opening and closign tag) provides information
+	to the importer, regarding where/how to load, the document -->
+	<Header>
+		<!-- Sender (Optional) -->
+		<SenderID>MySenderId</SenderID>
+		<!-- Receiver (Optional) -->
+		<ReceiverID>MyResceiverId</ReceiverID>
+		<!-- The Action Tag determines what action to perform for this import. 
+			'Add' adds the carrier if not found or throws an error if carrier already exists. 
+			'Update' updates the carrier if found in the hierarchy or throws an error if the carrier is not found. 
+		-->
+		<Action>Add</Action>
+		<!--Type of Object in the system which this document represents-->
+		<DocTypeID>Carrier</DocTypeID>
+		<!--Document Index Default to 1 -->
+		<DocCount>1</DocCount>
+		<!--The Date and Time for which this document was created -->
+		<Date type='created'>04/29/2004 10:00</Date>
+	</Header>
+	<Carriers>
+		<!-- Represents a carrier with the specified attributes in the system. 
+			The 'CustomerAcctNum' value is the account number of the enterprise for which this carrier will load. This value overrides the Global Receiver Id specified above..-->
+<Carrier name='Carrier Name' mcNum='MC#' active='true' action='' airDimNum='AirDim01' scac='ACME' fedEin='FEDEIN01' customerAcctNum='MercuryGateAcct01' usdotNum='' carrierId='CarrierID-01' dunsNum='Duns01'>
+			<!-- Specify One or more References if needed -->
+			<ReferenceNumbers>
+				<ReferenceNumber type='RefTypeOne'>1234</ReferenceNumber>
+				<ReferenceNumber type='RefTypeTwo'>5678</ReferenceNumber>
+				<ReferenceNumber type='RefTypeThree'>90123</ReferenceNumber>
+			</ReferenceNumbers>
+			<!-- Specify One or more modes if needed -->
+			<Modes>
+				<Mode type='Truckload'/>
+				<Mode type='External Carrier'/>
+			</Modes>
+			<!-- Specify None, One, or more equipment codes. -->
+			<Equipment>
+				<EquipmentCode description='AIRRIDE'>A</EquipmentCode>
+				<EquipmentCode description='VAN'>V</EquipmentCode>
+			</Equipment>
+			<!-- Specify One or more Hazmats if needed -->
+			<HazMats>
+				<HazMat type=''/>
+				<HazMat type=''/>
+			</HazMats>
+			<!-- Specify one or more insurance types if needed -->
+			<InsuranceTypes>
+				<Insurance type='General' amount='10000.00' company='GeneralIns' contactName='John Smith' contactPhone='111-222-3333' expirationDate='11/29/2008 00:00'/>
+			</InsuranceTypes>
+			<!-- TenderConfiguration (Optional) specify type = None or Email or Electronic -->
+			<TenderConfiguration type='Email'>
+				<PROSequence>			SequenceID		</PROSequence>
+				<EmailTo>			abbbb@aol.org		</EmailTo>
+				<!-- required if type=Email.  Applies only if type=Email. -->
+				<EmailFrom>			aacccc@aol.org		</EmailFrom>
+				<!-- required if type=Email Applies only if type=Email.  -->
+				<EmailBody>			Please respond ASAP.	</EmailBody>
+				<!-- Applies only if type=Email -->
+				<HideRateInTender>		true			</HideRateInTender>
+				<!-- optional.  default is false -->
+				<AllowSendTenderRevokeMsgs>	true			</AllowSendTenderRevokeMsgs>
+				<!-- optional.  default is false -->
+				<AutoAccept>			true			</AutoAccept>
+				<!-- optional.  default is false -->
+				<EarliestTenderTime>		06:00			</EarliestTenderTime>
+				<!-- optional.  HH:mm format -->
+				<LatestTenderTime>		18:00			</LatestTenderTime>
+				<!-- optional. -->
+				<TenderTimeZone>		Western			</TenderTimeZone>
+				<!-- optional.  Code value in TimeZones codes table -->
+			</TenderConfiguration>
+			<!-- Specify None, One, or more locations. -->
+			<Locations>
+				<!-- One or more Address tags represent a location in the system. -->
+				<Address type='Carrier' isPrimary='true'>
+					<ReferenceNumbers>
+						<ReferenceNumber type='Account Number'>Mercury01</ReferenceNumber>
+					</ReferenceNumbers>
+					<LocationCode>MGLOC1</LocationCode>
+					<Alias/>
+					<Name>MercuryGate</Name>
+					<AddrLine1>2410 Reliance Ave</AddrLine1>
+					<City>City</City>
+					<StateProvince>State</StateProvince>
+					<PostalCode>27539</PostalCode>
+					<CountryCode>Country</CountryCode>
+					<Contacts>
+						<Contact type='CSR'>
+							<Name>Steve Blough</Name>
+							<ContactMethods>
+								<ContactMethod type='phone' sequenceNum='1'>Contact Phone #</ContactMethod>
+								<ContactMethod type='fax' sequenceNum='2'>Contact Phone #</ContactMethod>
+							</ContactMethods>
+						</Contact>
+					</Contacts>
+					<!-- TenderConfiguration on carrier location (Optional) specify type = None or Email or Electronic -->
+					<TenderConfiguration type='Email'>
+						<PROSequence>			SequenceID		</PROSequence>
+						<EmailTo>		Contact Email		</EmailTo>
+						<!-- required if type=Email.  Applies only if type=Email. -->
+						<EmailFrom>			Contact Email		</EmailFrom>
+						<!-- required if type=Email.  Applies only if type=Email.  -->
+						<EmailBody>			Please respond ASAP.	</EmailBody>
+						<!-- optional.  Applies only if type=Email -->
+						<HideRateInTender>		true			</HideRateInTender>
+						<!-- optional.  default is false -->
+						<AllowSendTenderRevokeMsgs>	true			</AllowSendTenderRevokeMsgs>
+						<!-- optional.  default is false -->
+						<AutoAccept>			true			</AutoAccept>
+						<!-- optional.  default is false -->
+						<EarliestTenderTime>		06:00			</EarliestTenderTime>
+						<!-- optional.  use 17:00 format if enterprise configured for military time, else 05:00 pm -->
+						<LatestTenderTime>		18:00			</LatestTenderTime>
+						<!-- optional.  use 17:00 format if enterprise configured for military time, else 05:00 pm -->
+						<TenderTimeZone>		Western			</TenderTimeZone>
+						<!-- optional.  Code value in TimeZones codes table -->
+					</TenderConfiguration>
+				</Address>
+			</Locations>
+		</Carrier><Carrier name='HFL AAA COOPER TRANSPORTATION' mcNum='MC055889' active='true' action='' airDimNum='AirDim01' scac='ACME' fedEin='FEDEIN01' customerAcctNum='MercuryGateAcct01' usdotNum='' carrierId='CarrierID-01' dunsNum='Duns01'>
+			<!-- Specify One or more References if needed -->
+			<ReferenceNumbers>
+				<ReferenceNumber type='RefTypeOne'>1234</ReferenceNumber>
+				<ReferenceNumber type='RefTypeTwo'>5678</ReferenceNumber>
+				<ReferenceNumber type='RefTypeThree'>90123</ReferenceNumber>
+			</ReferenceNumbers>
+			<!-- Specify One or more modes if needed -->
+			<Modes>
+				<Mode type='Truckload'/>
+				<Mode type='External Carrier'/>
+			</Modes>
+			<!-- Specify None, One, or more equipment codes. -->
+			<Equipment>
+				<EquipmentCode description='AIRRIDE'>A</EquipmentCode>
+				<EquipmentCode description='VAN'>V</EquipmentCode>
+			</Equipment>
+			<!-- Specify One or more Hazmats if needed -->
+			<HazMats>
+				<HazMat type=''/>
+				<HazMat type=''/>
+			</HazMats>
+			<!-- Specify one or more insurance types if needed -->
+			<InsuranceTypes>
+				<Insurance type='General' amount='10000.00' company='GeneralIns' contactName='John Smith' contactPhone='111-222-3333' expirationDate='11/29/2008 00:00'/>
+			</InsuranceTypes>
+			<!-- TenderConfiguration (Optional) specify type = None or Email or Electronic -->
+			<TenderConfiguration type='Email'>
+				<PROSequence>			SequenceID		</PROSequence>
+				<EmailTo>			abbbb@aol.org		</EmailTo>
+				<!-- required if type=Email.  Applies only if type=Email. -->
+				<EmailFrom>			aacccc@aol.org		</EmailFrom>
+				<!-- required if type=Email Applies only if type=Email.  -->
+				<EmailBody>			Please respond ASAP.	</EmailBody>
+				<!-- Applies only if type=Email -->
+				<HideRateInTender>		true			</HideRateInTender>
+				<!-- optional.  default is false -->
+				<AllowSendTenderRevokeMsgs>	true			</AllowSendTenderRevokeMsgs>
+				<!-- optional.  default is false -->
+				<AutoAccept>			true			</AutoAccept>
+				<!-- optional.  default is false -->
+				<EarliestTenderTime>		06:00			</EarliestTenderTime>
+				<!-- optional.  HH:mm format -->
+				<LatestTenderTime>		18:00			</LatestTenderTime>
+				<!-- optional. -->
+				<TenderTimeZone>		Western			</TenderTimeZone>
+				<!-- optional.  Code value in TimeZones codes table -->
+			</TenderConfiguration>
+			<!-- Specify None, One, or more locations. -->
+			<Locations>
+				<!-- One or more Address tags represent a location in the system. -->
+				<Address type='Carrier' isPrimary='true'>
+					<ReferenceNumbers>
+						<ReferenceNumber type='Account Number'>Mercury01</ReferenceNumber>
+					</ReferenceNumbers>
+					<LocationCode>MGLOC1</LocationCode>
+					<Alias/>
+					<Name>MercuryGate</Name>
+					<AddrLine1>2410 Reliance Ave</AddrLine1>
+					<City>Dothan</City>
+					<StateProvince>AL</StateProvince>
+					<PostalCode>27539</PostalCode>
+					<CountryCode>USA</CountryCode>
+					<Contacts>
+						<Contact type='CSR'>
+							<Name>Steve Blough</Name>
+							<ContactMethods>
+								<ContactMethod type='phone' sequenceNum='1'>3347932284     </ContactMethod>
+								<ContactMethod type='fax' sequenceNum='2'>3347932284     </ContactMethod>
+							</ContactMethods>
+						</Contact>
+					</Contacts>
+					<!-- TenderConfiguration on carrier location (Optional) specify type = None or Email or Electronic -->
+					<TenderConfiguration type='Email'>
+						<PROSequence>			SequenceID		</PROSequence>
+						<EmailTo>		customercare@aaacooper.com 		</EmailTo>
+						<!-- required if type=Email.  Applies only if type=Email. -->
+						<EmailFrom>			customercare@aaacooper.com 		</EmailFrom>
+						<!-- required if type=Email.  Applies only if type=Email.  -->
+						<EmailBody>			Please respond ASAP.	</EmailBody>
+						<!-- optional.  Applies only if type=Email -->
+						<HideRateInTender>		true			</HideRateInTender>
+						<!-- optional.  default is false -->
+						<AllowSendTenderRevokeMsgs>	true			</AllowSendTenderRevokeMsgs>
+						<!-- optional.  default is false -->
+						<AutoAccept>			true			</AutoAccept>
+						<!-- optional.  default is false -->
+						<EarliestTenderTime>		06:00			</EarliestTenderTime>
+						<!-- optional.  use 17:00 format if enterprise configured for military time, else 05:00 pm -->
+						<LatestTenderTime>		18:00			</LatestTenderTime>
+						<!-- optional.  use 17:00 format if enterprise configured for military time, else 05:00 pm -->
+						<TenderTimeZone>		Western			</TenderTimeZone>
+						<!-- optional.  Code value in TimeZones codes table -->
+					</TenderConfiguration>
+				</Address>
+			</Locations>
+		</Carrier>
+		</Carriers>
+</MercuryGate>
