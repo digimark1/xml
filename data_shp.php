@@ -8,41 +8,41 @@ header('Access-Control-Allow-Origin: *');
 
 $database = '<?xml version="1.0" encoding="UTF-8"?>
 <shipment_menu>
-	<shp1>
+	<shp>
 		<name>Shipment 1</name>
 		<item>14 Pallets</item>
 		<contact_phone>843-488-0858</contact_phone>
 		<origin>Conway, SC</origin>
 		<destination>Boston, MA</destination>
-	</shp1>
-	<shp2>
+	</shp>
+	<shp>
 		<name>Shipment 2</name>
 		<item>3 Skids</item>
 		<contact_phone>818-529-8027</contact_phone>
 		<origin>Westbury, NY</origin>
 		<destination>Houston, TX</destination>
-	</shp2>
-	<shp3>
+	</shp>
+	<shp>
 		<name>Shipment 3</name>
 		<item>8 Pallets</item>
 		<contact_phone>850-305-3235</contact_phone>
 		<origin>Richmond, VA</origin>
 		<destination>Clay, NY</destination>
-	</shp3>
-	<shp4>
+	</shp>
+	<shp>
 		<name>Shipment 4</name>
 		<item>9 Drums</item>
 		<contact_phone>559-792-6374</contact_phone>
 		<origin>Dickson, TN</origin>
 		<destination>Mount Vernon, IL</destination>
-	</shp4>
-	<shp5>
+	</shp>
+	<shp>
 		<name>Shipment 5</name>
 		<item>20 Cartons</item>
 		<contact_phone>703-502-0948</contact_phone>
 		<origin>Union City, CA</origin>
 		<destination>Centerville, VA</destination>
-	</shp5>
+	</shp>
 </shipment_menu>';
 
 if ($userid == 'leanstaffing' && $password == md5('lean2016')){

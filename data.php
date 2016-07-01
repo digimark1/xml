@@ -8,36 +8,36 @@ header('Access-Control-Allow-Origin: *');
 
 $database = '<?xml version="1.0" encoding="UTF-8"?>
 <courier_menu>
-	<ups>
+	<cpy>
 		<name>UPS Shipping Freight</name>
 		<address>3264 Lynn Ogden Lane</address>
 		<city>Houston, TX</city>
 		<phone>409-932-8538</phone>
-	</ups>
-	<dhl>
+	</cpy>
+	<cpy>
 		<name>DHL Global</name>
 		<address>440 Edwards Street</address>
 		<city>Greenville, NC</city>
 		<phone>252-643-8551</phone>
-	</dhl>
-	<tnt>
+	</cpy>
+	<cpy>
 		<name>TNT Express Shipping</name>
 		<address>483 Illinois Avenue</address>
 		<city>Sandy, OR</city>
 		<phone>503-668-3265</phone>
-	</tnt>
-	<fedex>
+	</cpy>
+	<cpy>
 		<name>FedEx tracking</name>
 		<address>256 Rardin Drive</address>
 		<city>Burlingame, CA</city>
 		<phone>650-696-4930</phone>
-	</fedex>
-	<usps>
+	</cpy>
+	<cpy>
 		<name>US Postal Services</name>
 		<address>957 Medical Center Drive</address>
 		<city>Tampa, FL</city>
 		<phone>941-374-3068</phone>
-	</usps>
+	</cpy>
 </courier_menu>';
 
 if ($userid == 'leanstaffing' && $password == md5('lean2016')){
